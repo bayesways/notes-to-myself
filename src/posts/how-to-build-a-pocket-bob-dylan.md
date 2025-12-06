@@ -1,5 +1,5 @@
 ---
-title: "How to build a Pocket Bob Dylan"
+title: "How to build a pocket Bob Dylan"
 date: "2025-12-06"
 description: "Short description."
 ---
