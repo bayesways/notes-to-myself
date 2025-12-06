@@ -87,33 +87,41 @@ a:hover {
 }
 
 .post-item {
-  margin-bottom: 40px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #333;
+  /* Subtle separator */
+  padding-bottom: 12px;
 }
 
-.post-item h2 {
-  margin-top: 0;
-  margin-bottom: 0.2em;
-  font-size: 1.6rem;
+.post-item:last-child {
+  border-bottom: none;
 }
 
 .post-item a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   color: var(--text-color);
+  text-decoration: none;
 }
 
-.post-item a:hover {
+.post-item a:hover .post-title {
   color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.post-title {
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .post-date {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--secondary-text);
-  margin-bottom: 0.5em;
-  display: block;
-}
-
-.post-desc {
-  color: var(--secondary-text);
-  margin-top: 0.5em;
+  white-space: nowrap;
+  margin-left: 20px;
+  font-family: monospace;
+  /* Tabular nums feel */
 }
 
 .site-footer {

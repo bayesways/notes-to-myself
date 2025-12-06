@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="container">
       <header className="site-header">
-        <Link to="/" className="site-title">My Retro Blog</Link>
+        <Link to="/" className="site-title">Notes to Myself</Link>
       </header>
       <main>
         <Routes>
@@ -14,9 +14,6 @@ function App() {
           <Route path="/post/:slug" element={<Post />} />
         </Routes>
       </main>
-      <footer className="site-footer">
-        <p>© {new Date().getFullYear()} My Retro Blog. Built with Vite & React.</p>
-      </footer>
     </div>
   );
 }

@@ -25,14 +25,12 @@ function Home() {
 
     return (
         <div className="home">
-            <h1>Latest Posts</h1>
             <ul className="post-list">
                 {posts.map(post => (
                     <li key={post.slug} className="post-item">
                         <Link to={`/post/${post.slug}`}>
-                            <h2>{post.title}</h2>
-                            <p className="post-date">{post.date}</p>
-                            <p className="post-desc">{post.description}</p>
+                            <span className="post-title">{post.title}</span>
+                            <span className="post-date">{post.date}</span>
                         </Link>
                     </li>
                 ))}
