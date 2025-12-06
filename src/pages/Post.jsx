@@ -1,9 +1,12 @@
 import fm from 'front-matter';
 import 'highlight.js/styles/github-dark.css'; // Import highlight.js style
+import 'katex/dist/katex.min.css'; // Import KaTeX style
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { useParams } from 'react-router-dom';
 import rehypeHighlight from 'rehype-highlight';
+import rehypeKatex from 'rehype-katex';
+import remarkMath from 'remark-math';
 
 function Post() {
     const { slug } = useParams();
@@ -43,7 +46,10 @@ function Post() {
                 {meta.date && <p className="post-date">{meta.date}</p>}
             </header>
             <div className="markdown-body">
-                <ReactMarkdown rehypePlugins={[rehypeHighlight]}>
+                <ReactMarkdown
+                    remarkPlugins={[remarkMath]}
+                    rehypePlugins={[rehypeHighlight, rehypeKatex]}
+                >
                     {content}
                 </ReactMarkdown>
             </div>

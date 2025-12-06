@@ -17,6 +17,7 @@ function Home() {
                     return { slug, ...attributes };
                 })
             );
+            loadedPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
             setPosts(loadedPosts);
         };
 

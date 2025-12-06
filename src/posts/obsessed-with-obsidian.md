@@ -1,7 +1,6 @@
 ---
 title: "Obsessed with Obsidian"
-date: "2025-12-06"
-description: "Short description."
+date: "2023-05-11"
 ---
 
 ## Overview 
