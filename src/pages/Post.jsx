@@ -3,7 +3,7 @@ import 'highlight.js/styles/github-dark.css'; // Import highlight.js style
 import 'katex/dist/katex.min.css'; // Import KaTeX style
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import rehypeHighlight from 'rehype-highlight';
 import rehypeKatex from 'rehype-katex';
 import remarkMath from 'remark-math';
@@ -49,19 +49,39 @@ function Post() {
                 <ReactMarkdown
                     remarkPlugins={[remarkMath]}
                     rehypePlugins={[rehypeHighlight, rehypeKatex]}
-                    components={{
-                        a: ({ node, ...props }) => {
-                            if (props.href && (props.href.startsWith('http') || props.href.startsWith('//'))) {
-                                return <a {...props} target="_blank" rel="noopener noreferrer" />;
+                    urlTransform={(url, key, node) => {
+                        // Only transform hrefs
+                        if (key === 'href') {
+                            // External links and anchors return as-is
+                            if (url.startsWith('http') || url.startsWith('//') || url.startsWith('#')) {
+                                return url;
                             }
-                            // Handle relative links from markdown files (e.g. "../other-post")
-                            // We resolve them to "/post/other-post" to work with our router
-                            let to = props.href;
-                            if (to.startsWith('../')) {
-                                to = '/post/' + to.substring(3);
+
+                            // Internal links logic
+                            let slug = url;
+
+                            // Strip markdown extension
+                            if (slug.endsWith('.md')) {
+                                slug = slug.slice(0, -3);
                             }
-                            return <Link to={to} {...props} />;
+
+                            // Handle relative paths
+                            if (slug.startsWith('../')) {
+                                slug = slug.substring(3);
+                            } else if (slug.startsWith('./')) {
+                                slug = slug.substring(2);
+                            }
+
+                            // If it's absolute, respect it but prepend hash for HashRouter
+                            // NOTE: HashRouter uses #/path. If the link is /about, it should be #/about using standard anchor behavior.
+                            if (slug.startsWith('/')) {
+                                return `#${slug}`;
+                            }
+
+                            // Default to post route
+                            return `#/post/${slug}`;
                         }
+                        return url;
                     }}
                 >
                     {content}
