@@ -2,7 +2,6 @@
 title: "How to build an MCP server and research agent"
 date: "2025-06-08"
 ---
-
 Inspired by the Huggingface MCP [course](https://huggingface.co/learn/mcp-course/unit1/introduction), I decided to build an MCP application. 
 
 I started by replicating an example from the course to ensure that it works. The MCP server implements a sentiment analysis function and the client is an agent that has access to the tool. Below is how I got it to run. 

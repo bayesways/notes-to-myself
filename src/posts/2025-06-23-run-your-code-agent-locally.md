@@ -1,8 +1,7 @@
 ---
-title: "how to run your agent locally"
-date: "2025-12-07"
+title: "Run your code agent locally"
+date: "2025-06-23"
 ---
-
 - Install [ollama](https://ollama.com/) 
 - Run 
 ```bash
@@ -58,4 +57,3 @@ result = agent.run("Explain what this code does:\n\nfor i in range(5): print(i)"
 print(result)
 ```
 ## References
-

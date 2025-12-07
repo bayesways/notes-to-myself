@@ -2,7 +2,6 @@
 title: "Obsessed with Obsidian"
 date: "2023-05-11"
 ---
-
 ## Overview 
 
 Obsidian is a note organizer. I have been using the very basic features for a few months but only recently delved deeper. It's been game changing. 

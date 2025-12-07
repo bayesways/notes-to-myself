@@ -1,8 +1,7 @@
 ---
 title: "How many German tanks did the Allies not see?"
-date: '2021-07-17'
+date: "2021-07-17"
 ---
-
 This is about a math triumph during World War II. While preparations for D-Day are under way, the allies' plan is threatened by news from Italy. The Germans have rolled out a new tank model Panzer V, which threatens the superiority of allied tank thus far. This model was seen before only in small numbers but now rumors of a large fleet of them are spreading. In order to decide whether to go ahead or not with the invasion plans, the allies desperately need to know how many of these new tanks do the Germans have. Presumably if the enemy has a lot then the invasion plan has to be cancelled and redesigned. Otherwise, the plan has to be expedited before the Germans have a chance to build more. 
 
 
