@@ -3,7 +3,7 @@ import 'highlight.js/styles/github-dark.css'; // Import highlight.js style
 import 'katex/dist/katex.min.css'; // Import KaTeX style
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import rehypeHighlight from 'rehype-highlight';
 import rehypeKatex from 'rehype-katex';
 import remarkMath from 'remark-math';
@@ -49,6 +49,20 @@ function Post() {
                 <ReactMarkdown
                     remarkPlugins={[remarkMath]}
                     rehypePlugins={[rehypeHighlight, rehypeKatex]}
+                    components={{
+                        a: ({ node, ...props }) => {
+                            if (props.href && (props.href.startsWith('http') || props.href.startsWith('//'))) {
+                                return <a {...props} target="_blank" rel="noopener noreferrer" />;
+                            }
+                            // Handle relative links from markdown files (e.g. "../other-post")
+                            // We resolve them to "/post/other-post" to work with our router
+                            let to = props.href;
+                            if (to.startsWith('../')) {
+                                to = '/post/' + to.substring(3);
+                            }
+                            return <Link to={to} {...props} />;
+                        }
+                    }}
                 >
                     {content}
                 </ReactMarkdown>
