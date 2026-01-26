@@ -1,5 +1,5 @@
 ---
-title: "notes on Karpathy year review"
+title: "The Year of Claude Code"
 date: "2025-12-28"
 ---
 I agree with [Karpathy](https://karpathy.bearblog.dev/year-in-review-2025/) on all but the order. Claude code is undoubtedly 1st on the list. 
