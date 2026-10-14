@@ -1,5 +1,5 @@
 ---
-title: "A brief history of the AI singularity theory"
+title: "The singularity was near indeed"
 date: "2026-10-13"
 ---
 Ray Kurzweil estimated the human brain capability at about 10^16 calculations per second. [1] He then looked at the historical trends of the price-performance of compute. If the exponential growth continued, he estimated that $1,000 of hardware would match the human brain by around 2020. [1]
@@ -60,3 +60,4 @@ Perhaps the most convincing critique one can raise is that they got the right re
 15. Ben Cottier, Robi Rahman, Loredana Fattorini, Nestor Maslej and David Owen, ["How Much Does It Cost to Train Frontier AI Models?"](https://epoch.ai/blog/how-much-does-it-cost-to-train-frontier-ai-models), Epoch AI, 3 June 2024.
 16. Anson Ho et al., ["Algorithmic Progress in Language Models"](https://epoch.ai/blog/algorithmic-progress-in-language-models), Epoch AI, 12 March 2024. Not cited in the paragraph; it supports the note on algorithms.
 17. Ray Kurzweil, _The Singularity Is Nearer: When We Merge with AI_ (Viking, 2024). The "repairing organs" quote comes via the [_Publishers Weekly_ review](https://publishersweekly.com/9780399562761), so check the book's wording.
+
