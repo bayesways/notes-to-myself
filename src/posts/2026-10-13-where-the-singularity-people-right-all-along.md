@@ -37,6 +37,8 @@ Vinge set his date largely on the hardware trend and expected working software o
 
 Yudkowsky seems to disagree. In 2008 he wrote that Moore's law only "lowers the barrier that keeps us from building AI without a deep understanding of cognition" [8]. He did accept the trade-off. A 2001 post says getting AI without knowing what you are doing probably needs far more hardware, for example by brute-forcing an evolutionary algorithm. He treated that as the route to avoid [12].
 
+Perhaps the most convincing critique one can raise is that they got the right results for the wrong reasons. They expected compute performance to continue growing exponentially, and it did, but most of the recent gains were the result of extra spending, not cheaper chips [13][14][15]. Kurzweil expected that reverse engineering the brain would yield artificial intelligence [7], whereas in reality successful approaches used the brain as inspiration at best. They also predicted many futuristic scenarios that remain more science fiction and less reality, such as merging with the machines or having tiny nano robots repair our organs to cure human diseases [17]. However, in my opinion, none of this criticism alters the fact that the singularity group was able to focus on the right trends and use simple extrapolation to formulate a surprisingly accurate prophecy decades ahead of the curve.
+
 ---
 
 ## References
@@ -53,3 +55,8 @@ Yudkowsky seems to disagree. In 2008 he wrote that Moore's law only "lowers the 
 10. Ray Kurzweil, ["Kurzweil Responds: Don't Underestimate the Singularity"](https://www.technologyreview.com/2011/10/20/190615/kurzweil-responds-dont-underestimate-the-singularity/amp/), _MIT Technology Review_, 20 October 2011.
 11. Rich Sutton, "The Bitter Lesson", 13 March 2019, incompleteideas.net (checked via [a copy](https://huggingface.co/spaces/yourbench/demo/blame/main/frontend/public/the-bitter-lesson.html)).
 12. Eliezer Yudkowsky, ["Re: The Dazzle Effect: Staring into the Singularity"](https://diyhpl.us/~bryan/irc/extropians/extracted-extropians-archive/archive/0108/89732.html), Extropians mailing list, 16 August 2001.
+13. Marius Hobbhahn and Tamay Besiroglu, ["Trends in GPU Price-Performance"](https://epoch.ai/blog/trends-in-gpu-price-performance), Epoch AI, 27 June 2022.
+14. Jaime Sevilla and Edu Roldán, ["Training Compute of Frontier AI Models Grows by 4-5x per Year"](https://epoch.ai/blog/training-compute-of-frontier-ai-models-grows-by-4-5x-per-year), Epoch AI, 28 May 2024.
+15. Ben Cottier, Robi Rahman, Loredana Fattorini, Nestor Maslej and David Owen, ["How Much Does It Cost to Train Frontier AI Models?"](https://epoch.ai/blog/how-much-does-it-cost-to-train-frontier-ai-models), Epoch AI, 3 June 2024.
+16. Anson Ho et al., ["Algorithmic Progress in Language Models"](https://epoch.ai/blog/algorithmic-progress-in-language-models), Epoch AI, 12 March 2024. Not cited in the paragraph; it supports the note on algorithms.
+17. Ray Kurzweil, _The Singularity Is Nearer: When We Merge with AI_ (Viking, 2024). The "repairing organs" quote comes via the [_Publishers Weekly_ review](https://publishersweekly.com/9780399562761), so check the book's wording.
